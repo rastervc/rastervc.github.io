@@ -1,0 +1,67 @@
+@import "jetbrains_mono.css";
+
+:root {
+    --color-bg: #1F1F28;
+    --color-bg-header: #16161D;
+
+    --color-fg-header: #DCD7BA;
+    --color-fg-header-accent: #B499DF;
+}
+
+body {
+    background-color: var(--color-bg);
+    margin: 0;
+}
+
+header {
+    position: absolute;
+
+    margin: 0;
+    padding: 0;
+
+    width: 100%;
+    height: 130px;
+
+    background-color: var(--color-bg-header);
+}
+
+#header-title {
+    position: absolute;
+    top: 50%;
+    left: 40px;
+    transform: translateY(-100%);
+
+    color: var(--color-fg-header);
+
+    font-family: 'JetBrains Mono';
+    font-weight: bold;
+    font-size: 30px;
+}
+
+.header-accent {
+    color: var(--color-fg-header-accent);
+}
+
+#header-dropdown {
+    position: absolute;
+
+    border: 1px solid white;
+}
+
+#dropdown-button {
+    background-color: white;
+}
+
+#dropdown-content {
+    display: none;
+
+    position: absolute;
+    background-color: white;
+
+    min-width: 160px;
+}
+
+#header-dropdown:hover {
+    #dropdown-button { background-color: white; }
+    #dropdown-content { display: block; }
+}
